@@ -1,0 +1,25 @@
+{
+  "name": "Look-Mom",
+  "version": "1.0.0",
+  "description": "Codesmith Cohort 17 Solo Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itspamlam/Look-Mom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itspamlam/Look-Mom/issues"
+  },
+  "homepage": "https://github.com/itspamlam/Look-Mom#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
+  }
+}
