@@ -1,5 +1,4 @@
 import React from 'react';
-import Entry from './Entry';
 
 /**
 * The main body containing the blog entries
@@ -15,16 +14,16 @@ class Blog extends React.Component {
   render() {
     return (
       <div>
-        <h1>Blog Title</h1>
-        <p>blog entry goes here</p>
+        <h1>LamFamBam Blog</h1>
+        <p>Login goes here</p>
 
-        <button
+        {/* <button
           onClick={() => {
             this.setState({ count: this.state.count + 1 });
           }}
         >
         Count: {this.state.count}
-        </button>
+        </button> */}
       </div>
     );
   }

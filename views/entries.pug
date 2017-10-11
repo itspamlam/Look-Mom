@@ -1,6 +1,8 @@
 extends layout.pug
 
 block content
+  form(action='/entries/new')
+    input(type='submit' class='post' value='Write New Post')
   .entries
     each entry in entries
       include entry.pug

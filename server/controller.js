@@ -2,7 +2,7 @@ const controller = function(model) {
 
   function getEntries(req, res) {
     model.Entry.fetchAll().then(function(entries) {
-      console.log(entries.serialize());
+      // console.log(entries.serialize());
       res.render('entries', {entries: entries.serialize()});
     });
   }
@@ -23,7 +23,7 @@ const controller = function(model) {
   }
 
   function createEntry(req, res) {
-    console.log(req.body);
+    // console.log(req.body);
     const newEntry = new model.Entry(req.body);
     newEntry.set({user_id: 1});
     newEntry.save()
@@ -31,7 +31,7 @@ const controller = function(model) {
       res.redirect('/entries');
     })
     .catch(function(reason) {
-      console.log(reason);
+      // console.log(reason);
       res.status(400).send('Oops! Bad request!');
     });
 
