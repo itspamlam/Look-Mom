@@ -18,6 +18,16 @@ const controller = function(model) {
     });
   }
 
+  // function deleteEntry(req, res) {
+  //   console.log({id: req.params.id});
+  //   new model.Entry({id: req.params.id})
+  //   .fetch({require: true})
+  //   .then(function(entry) {
+  //     console.log(entry);
+  //     entry.destroy();
+  //   })
+  // }
+
   function newEntry(req, res) {
     res.render('new_entry');
   }

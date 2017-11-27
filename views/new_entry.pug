@@ -1,8 +1,10 @@
+extends layout.pug
+
 block content
   h1 Create a New Entry
   form(action='/entries' method='post')
     label Title:
-    input(name='title' type='text')
+    input.form(name='title' type='text')
     label Picture:
     input(name='image_url' type='text')
     label What happened?:

@@ -1,5 +1,6 @@
 .entry
-  h1= entry.title
+  h2= entry.title
   img(src=entry.image_url)
   .someclass= entry.content
-  
+  form(action='/entries/delete')
+    input(type='submit' value='X')

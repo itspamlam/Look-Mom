@@ -12,7 +12,7 @@ const controller = require('./server/controller.js')(model);
  
 const compiler = webpack(webpackConfig);
 
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/build'));
 app.set('view engine', 'pug');
  
@@ -31,6 +31,8 @@ app.get('/entries', controller.getEntries);
 app.get('/entries/new', controller.newEntry);
 
 app.get('/entries/:id', controller.getEntry);
+
+// app.get('/entries/delete', controller.deleteEntry);
 
 app.post('/entries', controller.createEntry);
 
