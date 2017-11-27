@@ -3,11 +3,11 @@ import React from 'react';
 /**
 * The main body containing the blog entries
 */
-class Blog extends React.Component {
+class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      count: 0,
+      entries: [],
     };
   }
 
@@ -15,7 +15,7 @@ class Blog extends React.Component {
     return (
       <div>
         <h1>LamFamBam Blog</h1>
-        <p>Login goes here</p>
+        <p>Where we post what we did...</p>
 
         {/* <button
           onClick={() => {
